@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#e7ecef"
+    android:orientation="vertical">
+
+    <!-- Encabezado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#001838"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido al supermercado"
+            android:textColor="#e7ecef"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartado Administrativo"
+            android:textColor="#e7ecef"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <!-- Contenido del dashboard -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:backgroundTint="#E4D7D7"
+        android:columnCount="2"
+        android:rowCount="3">
+
+
+        <!-- Elemento 1 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/AgregarP"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:drawableTop="@drawable/baseline_add_shopping_cart_24"
+            android:drawablePadding="8dp"
+            android:onClick="Pantallacomprar"
+            android:padding="16dp"
+            android:text="Agregar Producto"
+            android:textColor="#001838"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- Elemento 2 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/HistorialPedidos"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:drawableTop="@drawable/baseline_list_90"
+            android:drawablePadding="8dp"
+            android:onClick="PantallaList"
+            android:padding="16dp"
+            android:text="Historial de Pedidos"
+            android:textColor="#001838"
+
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <!-- Elemento 5 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:drawableTop="@drawable/baseline_local_fire_department_24"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Ir a Consola"
+            android:textColor="#001838"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:onClick="VerConsola"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_button_background"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:text="Cerrar Sesion"
+            android:onClick="SalirA"
+            android:drawableTop="@drawable/baseline_logout_90"
+            android:textStyle="bold"
+            android:textColor="#001838"
+            android:textSize="16sp" />
+        <!-- Elemento 6 -->
+
+
+    </GridLayout>
+
+    <!-- Pie de página -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#001838"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2023 Todos los derechos reservados"
+            android:textColor="#e7ecef"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
